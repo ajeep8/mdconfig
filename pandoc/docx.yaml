@@ -1,0 +1,41 @@
+# verbosity: INFO
+reference-doc: /absolute_path_to/.pandoc/reference.docx
+
+toc: true
+toc-depth: 3
+# number-sections: true # 这个在docx中与docx模板的编号重复
+extract-media: /tmp
+
+filters:
+  - include-files.lua
+  - include-code-files.lua
+  - diagram-generator.lua
+  - pagebreak.lua
+    #  - mermaid-filter
+  - latex-div.lua
+    #  - panda.lua
+  - pandoc-crossref
+
+highlight-style: tango
+# highlight-style: pygments
+
+metadata:
+  # pandoc-crossref的配置
+  codeBlockCaptions: True
+
+  figureTitle: "图-"
+  tableTitle: "表-"
+  listingTitle: "代码-"
+  figPrefix: "图-"
+  tblPrefix: "表-"
+  lstPrefix: "代码-"
+
+  eqnPrefix: "公式-"
+  secPrefix: "章节-"
+
+  lofTitle: "图片目录"
+  lotTitle: "表格目录"
+  lolTitle: "代码目录"
+
+metadata-files:
+  - /absolute_path_to/.pandoc/defaults/common.yaml

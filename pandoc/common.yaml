@@ -1,0 +1,41 @@
+date: \today
+
+toc-title: "目录"
+geometry: a4paper
+fontsize: 14pt
+colorlinks: true
+CJKmainfont: SourceHanSerifCN-Medium
+# Windows need:
+  #mainfont: "SimSun"
+
+# Rmarkdown配置
+editor_options:
+  markdown:
+    wrap: 72
+output:
+  pdf_document:
+    fig_caption: yes
+    number_sections: yes
+  word_document:
+    toc: yes
+    fig_caption: yes
+    keep_md: true
+  html_document:
+    keep_md: true
+    df_print: paged
+
+# eisvogel模板的配置
+titlepage: yes
+titlepage-text-color: '000000'
+titlepage-rule-color: '360049'
+titlepage-rule-height: 0
+titlepage-background: /absolute_path_to/.pandoc/templates/background3.pdf
+toc-own-page: yes
+
+# lua-filters的include-files参数: 自动shift-heading-level-by
+include-auto: yes
+
+
+# 其它
+code-block-font-size: \footnotesize
+#top-level-division: chapter

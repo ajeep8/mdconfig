@@ -1,0 +1,22 @@
+# verbosity: INFO
+reference-doc: /absolute_path_to/.pandoc/reference.pptx
+
+extract-media: /tmp
+
+filters:
+  - include-files.lua
+  - panda.lua
+  - diagram-generator.lua
+  - pagebreak.lua
+  - mermaid-filter
+  - latex-div.lua
+  - panda.lua
+
+highlight-style: tango
+# highlight-style: pygments
+
+listings: true
+metadata:
+  listings: true
+  listings-disable-line-numbers: true
+

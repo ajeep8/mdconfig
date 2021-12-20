@@ -1,0 +1,65 @@
+# verbosity: INFO
+pdf-engine: xelatex
+template: eisvogel
+
+toc: true
+toc-depth: 3
+number-sections: true
+extract-media: /tmp
+columns: 10 
+# columns: 10 是为了绕过pandoc table一行内容不超过72字符不换行的bug
+
+filters:
+  - include-files.lua
+  - include-code-files.lua
+  - diagram-generator.lua
+  - pagebreak.lua
+  - latex-div.lua
+  - pandoc-latex-environment
+  - pandoc-crossref
+
+highlight-style: tango
+
+listings: true
+metadata:
+  listings: true
+  listings-disable-line-numbers: true
+  # pandoc-crossref的配置
+  #codeBlockCaptions: True
+
+  figureTitle: "图 "
+  tableTitle: "表 "
+  listingTitle: "代码 "
+  figPrefix: "图 "
+  tblPrefix: "表 "
+  lstPrefix: "代码 "
+
+  eqnPrefix: "公式 "
+  secPrefix: "章节 "
+
+  lofTitle: "图片目录"
+  lotTitle: "表格目录"
+  lolTitle: "代码目录"
+
+  pandoc-latex-environment:
+    cautionblock: [caution]
+    noteblock: [note]
+    tipblock: [tip]
+    warningblock: [warning]
+    importantblock: [important]
+
+  toc-title: "目录"
+  geometry: a4paper
+  fontsize: 14pt
+  CJKmainfont: SourceHanSerifCN-Medium
+  colorlinks: true
+  # eisvogel模板的配置
+  titlepage: yes
+  titlepage-text-color: '000000'
+  titlepage-rule-color: '360049'
+  titlepage-rule-height: 0
+  titlepage-background:   /absolute_path_to/.pandoc/templates/background3.pdf
+  toc-own-page: yes
+  include-auto: yes
+  code-block-font-size: \footnotesize
+  plantuml_path: /usr/share/plantuml/plantuml.jar
