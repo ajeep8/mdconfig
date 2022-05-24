@@ -1,3 +1,37 @@
+
+# MPE
+
+https://github.com/shd101wyy/vscode-markdown-preview-enhanced
+
+## 增加heading AutoNum支持
+
+MPE:自定义式样(Markdown Preview Enhanced:Customize CSS)
+~/.mume/style.less
+
+```shell
+cp style.less ~/.mume/
+```
+
+## 增加{.plantuml}的解析支持
+
+``` shell
+cp parseBlockInfo.js ~/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.6.3/node_modules//@shd101wyy/mume/out/src/lib/block-info/
+```
+
+# pandoc
+
+# Typora
+
+refer to: https://support.typora.io/Auto-Numbering/
+
+# vscode-vditor
+
+https://github.com/ajeep8/vscode-vditor
+
+vscode-vditor/assets/content-theme/light-autonum.css
+
+# Zettlr
+
 - ~/.config/Zettlr/defaults/export.docx.yaml
 - ~/.config/Zettlr/defaults/export.pdf.yaml
 - ~/.config/Zettlr/custom.css
@@ -11,3 +45,4 @@ typora使用pandoc来导出docx等格式，但用得很差很初级。由于pand
 date: \today、code-block-font-size: \footnotesize这样带latex参数的不知为什么需要放到md文件中才有效；
 
 而fontsize则相反，必须在导出配置yaml中才有效，在md中无法覆盖导出配置中的设置。
+
