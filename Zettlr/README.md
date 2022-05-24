@@ -1,6 +1,6 @@
-~/.config/Zettlr/defaults/export.docx.yaml
-~/.config/Zettlr/defaults/export.pdf.yaml
-~/.config/Zettlr/custom.css
+- ~/.config/Zettlr/defaults/export.docx.yaml
+- ~/.config/Zettlr/defaults/export.pdf.yaml
+- ~/.config/Zettlr/custom.css
 
 typora使用pandoc来导出docx等格式，但用得很差很初级。由于pandoc导出pdf需要latex环境有些复杂，typora导出pdf没有用pandoc。
 
