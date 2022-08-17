@@ -42,7 +42,9 @@ cp parseBlockInfo.js ~/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.
 
 https://github.com/ajeep8/vscode-vditor
 
-vscode-vditor/assets/content-theme/light-autonum.css
+``` shell
+cp light-autonum.css ~/.vscode/extensions/zhepama.vscode-vditor-1.0.7/assets/content-theme/
+```
 
 # pandoc
 
