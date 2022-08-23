@@ -1,0 +1,13 @@
+version: "3"
+services:
+  arya:
+    image: "arya:v0.2"
+    build:
+      context: ./
+      dockerfile: arya.Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8170:8080"
+        #env_file: ./docker/fqdn.env
+        #entrypoint: /mnt/openssl/create.sh
+        #command: ["nginx", "-g", "daemon off;"]
