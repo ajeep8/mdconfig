@@ -50,3 +50,10 @@ cp light-autonum.css ~/.vscode/extensions/zhepama.vscode-vditor-1.0.7/assets/con
 
 templates/eisvogel.latex come frome https://github.com/Wandmalfarbe/pandoc-latex-template with some "ajeep modify".
 
+# vim markdown preview
+
+https://github.com/iamcco/markdown-preview.nvim
+
+```
+cat autonum.css >> ~/.vim/plugged/markdown-preview.nvim/app/_static/markdown.css
+```

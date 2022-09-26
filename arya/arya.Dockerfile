@@ -3,14 +3,14 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/re
   && apk add --no-cache git
 
 FROM node_git AS arya
-RUN git config --global https.proxy 'http://10.222.1.1:7890' \
+RUN git config --global https.proxy 'http://192.168.100.199:7890' \
   && git clone https://github.com/nicejade/markdown-online-editor.git \
   && cd markdown-online-editor \
   && env PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn \
   && mkdir -p /markdown-online-editor/node_modules/vditor/dist/css/content-theme
 #   && yarn build; yarn cache clean
 
-COPY light-autonum.css /markdown-online-editor/node_modules/vditor/dist/css/content-theme/
+COPY light-autonum.css /markdown-online-editor/node_modules/vditor/dist/css/content-theme/light.css
 
 WORKDIR /markdown-online-editor
 CMD [ "yarn", "start" ]
