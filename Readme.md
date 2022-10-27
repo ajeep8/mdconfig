@@ -57,3 +57,14 @@ https://github.com/iamcco/markdown-preview.nvim
 ```
 cat autonum.css >> ~/.vim/plugged/markdown-preview.nvim/app/_static/markdown.css
 ```
+
+# Gitea
+
+增加heading AutoNum支持：
+
+```
+cp my-style-markdown.css gitea/gitea/public
+
+vi templates/custom/header.tmpl , add:
+<link rel="stylesheet" href="/assets/my-style-markdown.css" />
+```
