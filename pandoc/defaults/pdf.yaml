@@ -10,16 +10,19 @@ columns: 10
 # columns: 10 是为了绕过pandoc table一行内容不超过72字符不换行的bug
 
 filters:
-  - include-files.lua
+  - pandocOne/include-files.lua
     #  - pandoc-include
-  - include-code-files.lua
-  - diagram-generator.lua
-  - pagebreak.lua
+  - pandocOne/include-code-files.lua
+  - pandoc-csv2table
+    #- pandocker/csv2table.lua
+  - pandocOne/meta-vars.lua
+  - pandocOne/diagram-generator.lua
+  - lua-filters/pagebreak.lua
     #  - mermaid-filter
-  - latex-div.lua
+  - lua-filters/latex-div.lua
   - pandoc-latex-environment
-    #  - panda.lua
   - pandoc-crossref
+    #  - panda.lua
 
 highlight-style: tango
 
@@ -52,7 +55,6 @@ metadata:
     importantblock: [important]
 
 metadata-files:
-  - /absolute_path_to/.pandoc/defaults/common.yaml
-
-# because of pandoc-crossref, need to move headings.tex to eisvogel.latex   
-# include-in-header: /absolute_path_to/.pandoc/templates/headings.tex
+  - ${.}/common.yaml
+    
+# include-in-header: /.pandoc/templates/headings.tex
