@@ -13,7 +13,7 @@ filters:
   - pandocOne/include-files.lua
     #  - pandoc-include
   - pandocOne/include-code-files.lua
-  - pandoc-csv2table
+    #- pandoc-csv2table
     #- pandocker/csv2table.lua
   - pandocOne/meta-vars.lua
   - pandocOne/diagram-generator.lua

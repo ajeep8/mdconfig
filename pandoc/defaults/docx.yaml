@@ -9,15 +9,9 @@ extract-media: /tmp
 filters:
   - pandocOne/include-files.lua
   - pandocOne/include-code-files.lua
-  - pandoc-csv2table
-    # - pandocker/csv2table.lua
   - pandocOne/meta-vars.lua
   - pandocOne/diagram-generator.lua
-  - lua-filters/pagebreak.lua
-    #  - mermaid-filter
-    #- lua-filters/latex-div.lua
   - pandoc-crossref
-    #  - panda.lua
 
 highlight-style: tango
 # highlight-style: pygments
