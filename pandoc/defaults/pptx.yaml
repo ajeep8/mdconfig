@@ -15,3 +15,6 @@ metadata:
   listings: true
   listings-disable-line-numbers: true
 
+
+metadata-files:
+  - ${.}/common.yaml
