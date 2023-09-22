@@ -86,3 +86,20 @@ vertical-align: inherit;
 font-weight: inherit;
 line-height: inherit;
 }
+
+#typora-source {
+  font-family: monospace;
+  font-size: inherit;
+  --monospace: monospace; /* for code blocks and inline code inside source code mode */
+}
+
+body {
+  --monospace: monospace /* for all code blocks, inline code, and source code mode */
+}
+
+// or
+
+#md-fences {
+  /* for code block only */
+}
+
