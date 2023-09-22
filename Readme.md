@@ -2,6 +2,11 @@
 # Typora
 
 refer to: https://support.typora.io/Auto-Numbering/
+https://typorachina.com/guide/how-tos/custom-fonts.html
+
+- 渲染页和大纲自动编号
+- 渲染页宽度设定
+- 源码页和代码块使用monospace
 
 # Zettlr
 
