@@ -3,7 +3,9 @@ date: \today
 toc-title: "目录"
 geometry: a4paper
 fontsize: 12pt
-CJKmainfont: SourceHanSerifCN-Medium
+code-block-font-size: 10pt
+monofont: SimHei
+CJKmainfont: NotoSerifSC-Regular
   #mainfont: "SimSun"  # in windows, must use this line
 colorlinks: true
 lof: true
@@ -30,8 +32,9 @@ titlepage: yes
 titlepage-text-color: '000000'
 titlepage-rule-color: '360049'
 titlepage-rule-height: 0
-titlepage-background: /.pandoc/templates/background3.pdf
+titlepage-background: /.pandoc/templates/img/background3.pdf
 toc-own-page: yes
+multirow: yes
 
 # Parameter of include-files of lua-filters: auto shift-heading-level-by
 include-auto: yes
@@ -44,4 +47,3 @@ plantuml_url: http://192.168.100.199:8180
 drawio_url: http://192.168.100.199:8166
 mermaid_url: http://192.168.100.199:8170
 py2img_url: http://192.168.100.199:8190
-
