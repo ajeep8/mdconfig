@@ -1,5 +1,7 @@
 
-# Typora
+# Linux
+
+## Typora
 
 refer to: https://support.typora.io/Auto-Numbering/
 https://typorachina.com/guide/how-tos/custom-fonts.html
@@ -8,7 +10,7 @@ https://typorachina.com/guide/how-tos/custom-fonts.html
 - 渲染页宽度设定
 - 源码页和代码块使用monospace
 
-# Zettlr
+## Zettlr
 
 - ~/.config/Zettlr/defaults/export.docx.yaml
 - ~/.config/Zettlr/defaults/export.pdf.yaml
@@ -24,11 +26,11 @@ date: \today、code-block-font-size: \footnotesize这样带latex参数的不知�
 
 而fontsize则相反，必须在导出配置yaml中才有效，在md中无法覆盖导出配置中的设置。
 
-# MPE
+## MPE
 
 https://github.com/shd101wyy/vscode-markdown-preview-enhanced
 
-## 增加heading AutoNum支持
+### 增加heading AutoNum支持
 
 MPE:自定义式样(Markdown Preview Enhanced:Customize CSS)
 ~/.mume/style.less
@@ -37,13 +39,13 @@ MPE:自定义式样(Markdown Preview Enhanced:Customize CSS)
 cp style.less ~/.mume/
 ```
 
-## 增加{.plantuml}的解析支持
+### 增加{.plantuml}的解析支持
 
 ``` shell
 cp parseBlockInfo.js ~/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.6.3/node_modules//@shd101wyy/mume/out/src/lib/block-info/
 ```
 
-# vscode-vditor
+## vscode-vditor
 
 https://github.com/ajeep8/vscode-vditor
 
@@ -51,19 +53,22 @@ https://github.com/ajeep8/vscode-vditor
 cp light-autonum.css ~/.vscode/extensions/zhepama.vscode-vditor-1.0.7/assets/content-theme/
 ```
 
-# pandoc
+## pandoc
 
 templates/eisvogel.latex come frome https://github.com/Wandmalfarbe/pandoc-latex-template with some "ajeep modify".
 
-# vim markdown preview
+## vim markdown preview
 
 https://github.com/iamcco/markdown-preview.nvim
 
 ```
 cat autonum.css >> ~/.vim/plugged/markdown-preview.nvim/app/_static/markdown.css
 ```
+## epub
 
-# Gitea
+# Web
+
+## Gitea
 
 增加heading AutoNum支持：
 
@@ -73,3 +78,6 @@ cp my-style-markdown.css gitea/gitea/public
 vi templates/custom/header.tmpl , add:
 <link rel="stylesheet" href="/assets/my-style-markdown.css" />
 ```
+## Arya
+
+## stackedit
