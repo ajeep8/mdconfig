@@ -1,5 +1,5 @@
 
-# Linux
+# dotfiles
 
 ## Typora
 
@@ -26,7 +26,7 @@ date: \today、code-block-font-size: \footnotesize这样带latex参数的不知�
 
 而fontsize则相反，必须在导出配置yaml中才有效，在md中无法覆盖导出配置中的设置。
 
-## MPE
+## vscode-MPE
 
 https://github.com/shd101wyy/vscode-markdown-preview-enhanced
 
@@ -53,10 +53,6 @@ https://github.com/ajeep8/vscode-vditor
 cp light-autonum.css ~/.vscode/extensions/zhepama.vscode-vditor-1.0.7/assets/content-theme/
 ```
 
-## pandoc
-
-templates/eisvogel.latex come frome https://github.com/Wandmalfarbe/pandoc-latex-template with some "ajeep modify".
-
 ## vim markdown preview
 
 https://github.com/iamcco/markdown-preview.nvim
@@ -64,7 +60,17 @@ https://github.com/iamcco/markdown-preview.nvim
 ```
 cat autonum.css >> ~/.vim/plugged/markdown-preview.nvim/app/_static/markdown.css
 ```
-## epub
+
+## pandoc
+
+templates/eisvogel.latex come frome https://github.com/Wandmalfarbe/pandoc-latex-template with some "ajeep modify".
+
+# system config
+
+## Apostrophe
+
+cat autonum.css >> /usr/share/apostrophe/media/css/web/base.css
+
 
 # Web
 
