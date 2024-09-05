@@ -61,6 +61,8 @@ https://github.com/iamcco/markdown-preview.nvim
 cat autonum.css >> ~/.vim/plugged/markdown-preview.nvim/app/_static/markdown.css
 ```
 
+更新mermaid版本：下载mermaid.min.js到`~/.vim/plugged/markdown-preview.nvim/app/_static/`
+
 ## pandoc
 
 templates/eisvogel.latex come frome https://github.com/Wandmalfarbe/pandoc-latex-template with some "ajeep modify".
