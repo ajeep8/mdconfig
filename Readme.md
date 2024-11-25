@@ -45,6 +45,14 @@ cp style.less ~/.mume/
 cp parseBlockInfo.js ~/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.6.3/node_modules//@shd101wyy/mume/out/src/lib/block-info/
 ```
 
+### 更新plantuml和mermaid
+
+```sh
+cd ~/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.6.10/node_modules/@shd101wyy/mume/dependencies/
+cp ~/plantuml.jar plantuml/
+cp ~/mermaid.min.js mermaid/
+```
+
 ## vscode-vditor
 
 https://github.com/ajeep8/vscode-vditor
@@ -62,6 +70,8 @@ cat autonum.css >> ~/.vim/plugged/markdown-preview.nvim/app/_static/markdown.css
 ```
 
 更新mermaid版本：下载mermaid.min.js到`~/.vim/plugged/markdown-preview.nvim/app/_static/`
+
+修改plantuml版本：vi ~/.vim/plugged/markdown-preview.nvim/plugin/mkdp.vim g:mkdp_preview_options: 'uml':{'server': 'http://192.168.100.199:8180'}
 
 ## pandoc
 
