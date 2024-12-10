@@ -83,6 +83,13 @@ templates/eisvogel.latex come frome https://github.com/Wandmalfarbe/pandoc-latex
 
 cat autonum.css >> /usr/share/apostrophe/media/css/web/base.css
 
+## Obsidian
+
+[Obsidian自定义CSS](https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian外观/obsidian的css代码片段/)
+
+大纲自动编号：autonum.css
+
+图片显示图片描述：imglabel.css
 
 # Web
 
@@ -96,6 +103,7 @@ cp my-style-markdown.css gitea/gitea/public
 vi templates/custom/header.tmpl , add:
 <link rel="stylesheet" href="/assets/my-style-markdown.css" />
 ```
+
 ## Arya
 
 ## stackedit

@@ -1,0 +1,8 @@
+/* 显示图片标题 */
+.internal-embed.media-embed.image-embed.is-loaded[alt]::after {
+    content: attr(alt); /* 使用alt属性作为内容 */
+    text-align: center; /* 标题居中 */
+    color: var(--text-accent); /* 标题颜色 */
+    display: block; /* 使标题为块级元素 */
+    margin-top: 0.5em; /* 标题与图片之间的间距 */
+}
