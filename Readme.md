@@ -104,6 +104,15 @@ vi templates/custom/header.tmpl , add:
 <link rel="stylesheet" href="/assets/my-style-markdown.css" />
 ```
 
+增加plantuml渲染：如下两个文件复制到位
+
+```
+gitea/public/assets/plantuml_codeblock_parse.js
+gitea/templates/custom/footer.tmpl
+```
+
+```
+
 ## Arya
 
 ## stackedit
