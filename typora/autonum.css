@@ -233,15 +233,15 @@ code,
 }
 
 code {
-	padding-left: 2px;
-	padding-right: 2px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .md-fences {
 	margin-left: 2em;
 	margin-bottom: 3em;
-	padding-left: 1ch;
-	padding-right: 1ch;
+	padding-left: 0ch;
+	padding-right: 0ch;
 }
 
 pre,
@@ -285,6 +285,7 @@ li ol>li {
 }
 
 li li ol>li{
+	/* list-style-type: decimal; */
 	list-style-type: lower-roman;
 }
 
